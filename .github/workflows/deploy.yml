@@ -29,6 +29,13 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Show versions
+        run: |
+          node -v
+          npm -v
+          ls -la
+          cat package.json
+
       - name: Build
         run: npm run build
 
